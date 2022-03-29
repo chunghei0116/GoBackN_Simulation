@@ -457,7 +457,7 @@ terminate:
 void init() /* initialize the simulator */
 {
    printf("***********************************************************************************************************\n");
-   printf("         IERG3310 lab1: Reliable Data Transfer Protocol-GBN, implemented by 1155145396           \n");
+   printf("         IERG3310 lab1: Reliable Data Transfer Protocol-GBN, implemented by Chunghei0116           \n");
    printf("***********************************************************************************************************\n");
 
    float jimsrand();
