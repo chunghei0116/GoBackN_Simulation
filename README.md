@@ -12,8 +12,7 @@ The program takes three input parameters from stdin as follows:
 • Channel pattern string: this string specifies the characteristics of the
   underlying channel. Each character in the string specifies the action taken by the channel for a packet being transmitted. Character ‘o’ indicates the packet will be received correctly, ‘-’ indicates the packet will be corrupted, ‘x’ indicates the packet will be lost. For example: a channel pattern string “xo-xo” indicates that 1st packet will be lost, 2nd received correctly, 3rd corrupted, 4th lost, and 5th received correctly. All the following packets will then repeat the same pattern, i.e., 6th lost, 7th received correctly and so on. Note that you can input different pattern string to test your program. Note that the sequence of the packets in channel pattern refers to both data packets from sender to receiver and the ACK packets from the receiver to sender. For example, the 1st packet is a data packet from sender to receiver, and 2nd packet may be ACK from receiver to sender (if the first data packet was not lost), 3rd packet may be a data packet again, and so on. The length of channel pattern string input by the user must be shorter than 40 characters.
 • Sender’s window size: the number of packets that the sender keeps in its sending window. The default value is 8.
-• A single timer will be used for retransmitting all lost packets. To keep it simple, the timeout should always be set to be RTT in your program whenever the timer is started. However, you are allowed to set the timeout differently for earning bonus points (see 'Bonus Points' for details).
-  The accuracy of your program will be graded based on the results by different input parameters.
+
   
   Program Output:
   
